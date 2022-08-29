@@ -25,6 +25,7 @@ password VARCHAR(128)
 CREATE TABLE pay_cards (
 id SERIAL PRIMARY KEY,
 user_id INT,
+card_num VARCHAR(20),
 created_at TIMESTAMP
 );
 
@@ -105,10 +106,10 @@ percents DEC DEFAULT 0
 );
 
 CREATE TABLE products_prices_reduces_individual (
-id SERIAL PRIMARY KEY,
-user_id INT,
-products_price_id INT NOT NULL UNIQUE,
-percents DEC DEFAULT 0
+    user_id integer REFERENCES users,
+	products_price_id INT REFERENCES products_prices,
+    percents DEC DEFAULT 0,
+    PRIMARY KEY (user_id, products_price_id)
 );
 
 /*Добавляем ключи*/
@@ -177,18 +178,6 @@ ALTER TABLE orders
   ADD CONSTRAINT orders_pickpoint_id_fk 
   FOREIGN KEY (pickpoint_id) 
   REFERENCES pickpoints (id)
-  ON DELETE RESTRICT;
-  
-ALTER TABLE products_prices_reduces_individual
-  ADD CONSTRAINT prices_reduces_individual_users_user_id_fk 
-  FOREIGN KEY (user_id) 
-  REFERENCES users (id)
-  ON DELETE CASCADE;
-  
-ALTER TABLE products_prices_reduces_individual
-  ADD CONSTRAINT products_prices_reduces_individual_products_price_id_fk 
-  FOREIGN KEY (products_price_id) 
-  REFERENCES products_prices (id)
   ON DELETE RESTRICT;
   
 ALTER TABLE products_prices_reduces

@@ -1,4 +1,4 @@
-INSERT INTO profiles (user_id,email,phone,text,birthdate,created at)
+INSERT INTO profiles (user_id,email,phone,gender,birthdate,created_at)
 VALUES
   (137,'aenean.eget@icloud.ca','836-1712','F','May 9, 1933','2022-03-31 11:08:09'),
   (175,'aliquam.nec@aol.ca','718-0428','M','Oct 28, 1995','2021-09-13 10:50:17'),
@@ -10,7 +10,7 @@ VALUES
   (30,'sed.turpis@aol.org','524-6873','F','May 2, 1968','2022-12-20 12:02:56'),
   (52,'amet.dapibus@yahoo.com','874-2475','M','Oct 13, 1997','2022-03-24 16:34:50'),
   (70,'sit@google.couk','1-413-635-5526','F','Oct 18, 2020','2023-04-13 03:56:06');
-INSERT INTO profiles (user_id,email,phone,text,birthdate,created at)
+INSERT INTO profiles (user_id,email,phone,gender,birthdate,created_at)
 VALUES
   (35,'suspendisse.non@protonmail.org','874-7468','M','Apr 18, 1925','2022-10-15 07:41:31'),
   (41,'ac@yahoo.couk','1-326-711-3357','M','Dec 25, 1953','2023-08-10 21:16:33'),
@@ -22,7 +22,7 @@ VALUES
   (131,'ullamcorper.magna@aol.ca','346-9882','M','May 9, 2012','2023-04-08 15:18:21'),
   (154,'lectus.justo@protonmail.edu','1-742-764-7562','M','Mar 15, 1954','2022-12-17 20:06:56'),
   (122,'aenean.euismod@google.com','1-879-884-7688','F','Aug 29, 1984','2022-09-16 23:28:56');
-INSERT INTO profiles (user_id,email,phone,text,birthdate,created at)
+INSERT INTO profiles (user_id,email,phone,gender,birthdate,created_at)
 VALUES
   (53,'dui.quis@outlook.net','1-847-399-2957','M','Nov 29, 1966','2021-11-24 12:02:31'),
   (19,'lectus.convallis.est@yahoo.edu','1-212-294-6770','F','Dec 2, 2008','2023-01-29 15:27:05'),
@@ -34,7 +34,7 @@ VALUES
   (82,'fringilla.cursus.purus@aol.com','783-5853','M','Jan 18, 1941','2022-03-04 19:43:29'),
   (60,'sed.eu.eros@aol.com','1-923-753-2109','M','Jul 5, 1979','2022-09-29 15:33:56'),
   (41,'morbi@icloud.org','816-8613','F','Jan 14, 2022','2022-12-28 15:54:33');
-INSERT INTO profiles (user_id,email,phone,text,birthdate,created at)
+INSERT INTO profiles (user_id,email,phone,gender,birthdate,created_at)
 VALUES
   (139,'et.netus@hotmail.org','280-1306','M','Sep 22, 1997','2022-09-04 20:48:30'),
   (83,'dictum.phasellus@protonmail.edu','211-1924','M','Mar 25, 1959','2022-04-07 03:46:01'),
@@ -46,7 +46,7 @@ VALUES
   (129,'ut.nec.urna@hotmail.org','893-2075','M','Jan 24, 1970','2023-06-25 12:00:09'),
   (3,'fringilla.cursus.purus@icloud.ca','513-8471','M','Jan 14, 1984','2022-07-13 02:50:52'),
   (16,'nulla@hotmail.org','1-384-842-3283','F','Feb 14, 2002','2022-09-11 11:55:24');
-INSERT INTO profiles (user_id,email,phone,text,birthdate,created at)
+INSERT INTO profiles (user_id,email,phone,gender,birthdate,created_at)
 VALUES
   (83,'luctus.ut@hotmail.net','1-697-538-4142','F','Mar 6, 2009','2023-01-27 11:54:33'),
   (19,'nunc@hotmail.edu','1-788-851-9578','F','May 9, 1932','2022-03-07 10:31:31'),
@@ -58,7 +58,7 @@ VALUES
   (73,'aliquet.proin.velit@google.ca','865-5523','M','Oct 28, 1955','2023-01-04 13:42:41'),
   (68,'elit.dictum.eu@icloud.couk','1-927-384-1897','F','Jul 27, 1989','2022-01-17 21:32:42'),
   (70,'nulla.magna@aol.ca','1-885-433-1568','M','May 4, 2017','2023-06-10 03:38:53');
-INSERT INTO profiles (user_id,email,phone,text,birthdate,created at)
+INSERT INTO profiles (user_id,email,phone,gender,birthdate,created_at)
 VALUES
   (144,'eget.nisi.dictum@aol.ca','1-946-334-4126','F','Jun 24, 1970','2023-07-15 22:45:05'),
   (73,'enim.consequat@aol.edu','578-7375','F','Feb 28, 1997','2022-04-04 03:25:07'),
@@ -70,7 +70,7 @@ VALUES
   (29,'vulputate@protonmail.com','271-3234','M','Jan 5, 2002','2022-10-15 01:20:58'),
   (40,'morbi.non@yahoo.edu','746-8461','M','Oct 4, 1975','2022-01-31 01:17:22'),
   (36,'per@yahoo.net','667-8143','M','Jan 7, 1979','2021-09-10 01:50:15');
-INSERT INTO profiles (user_id,email,phone,text,birthdate,created at)
+INSERT INTO profiles (user_id,email,phone,gender,birthdate,created_at)
 VALUES
   (96,'sit.amet@google.edu','682-9533','F','Jul 30, 2018','2023-07-26 17:46:12'),
   (42,'molestie.orci@protonmail.couk','178-2980','F','Jul 5, 1985','2022-05-30 13:25:19'),
@@ -82,11 +82,11 @@ VALUES
   (179,'magna@hotmail.org','360-3580','F','Jun 1, 2018','2022-03-21 04:47:21'),
   (86,'eget@google.com','1-294-996-6455','M','Aug 16, 2009','2021-12-02 04:43:32'),
   (88,'eu.nulla.at@yahoo.com','1-374-822-6719','F','Sep 23, 2020','2022-11-02 19:29:21');
-INSERT INTO profiles (user_id,email,phone,text,birthdate,created at)
+INSERT INTO profiles (user_id,email,phone,gender,birthdate,created_at)
 VALUES
   (171,'integer@protonmail.ca','1-568-455-3548','M','Apr 5, 1995','2022-06-03 22:01:37'),
   (36,'venenatis@icloud.com','752-9568','F','Oct 31, 2006','2022-02-17 09:39:39'),
-  (142,'sodales@google.couk','720-2370','M','Jul 9, 1954','2022-08-16 03:22:17'),
+  (142,'sodales222@google.couk','720-2370','M','Jul 9, 1954','2022-08-16 03:22:17'),
   (63,'eu@hotmail.couk','769-4168','M','Nov 13, 1936','2023-05-21 05:57:15'),
   (144,'elit.fermentum@aol.net','832-0670','F','Jul 5, 1993','2021-10-25 11:03:21'),
   (35,'hendrerit.consectetuer@protonmail.net','455-7652','M','Dec 31, 1975','2022-12-11 15:20:24'),
@@ -94,7 +94,7 @@ VALUES
   (158,'rutrum@yahoo.edu','1-392-227-2577','M','Aug 19, 1986','2022-07-13 14:55:14'),
   (93,'pharetra@aol.ca','1-571-535-0634','M','Nov 17, 2014','2023-04-18 01:11:39'),
   (16,'sodales@protonmail.couk','1-767-618-4541','M','Aug 21, 1952','2022-08-18 17:59:23');
-INSERT INTO profiles (user_id,email,phone,text,birthdate,created at)
+INSERT INTO profiles (user_id,email,phone,gender,birthdate,created_at)
 VALUES
   (59,'ac.urna@hotmail.org','1-700-942-8866','F','Oct 27, 1994','2023-05-22 08:10:08'),
   (122,'quam.curabitur.vel@aol.net','1-185-886-7337','M','Oct 20, 1932','2022-05-28 03:13:01'),
@@ -106,7 +106,7 @@ VALUES
   (34,'nunc.quisque.ornare@aol.com','414-7692','F','Jul 12, 1952','2021-09-02 14:06:36'),
   (52,'odio@outlook.edu','1-561-300-7314','F','Nov 14, 1976','2021-12-09 23:43:17'),
   (39,'ipsum.nunc@yahoo.com','579-5856','M','Feb 1, 1999','2022-05-15 09:19:36');
-INSERT INTO profiles (user_id,email,phone,text,birthdate,created at)
+INSERT INTO profiles (user_id,email,phone,gender,birthdate,created_at)
 VALUES
   (22,'magna.nec@aol.couk','1-658-626-5985','F','Aug 20, 1975','2023-07-29 20:29:09'),
   (94,'eu@yahoo.net','371-7957','F','Nov 11, 2010','2022-11-21 04:12:40'),
@@ -118,7 +118,7 @@ VALUES
   (8,'rutrum.fusce@aol.com','1-225-952-3370','F','Jan 6, 1938','2022-07-21 14:21:37'),
   (120,'risus@yahoo.couk','887-6663','M','Nov 23, 1987','2022-05-27 17:45:28'),
   (67,'amet.faucibus@yahoo.ca','1-428-645-8610','M','Mar 22, 1939','2022-02-08 03:27:28');
-INSERT INTO profiles (user_id,email,phone,text,birthdate,created at)
+INSERT INTO profiles (user_id,email,phone,gender,birthdate,created_at)
 VALUES
   (83,'ullamcorper.magna@outlook.edu','1-624-624-2903','F','Jan 10, 1946','2022-09-06 07:39:21'),
   (12,'dui.fusce.diam@icloud.com','442-4283','F','Aug 26, 2012','2023-06-02 07:23:36'),
@@ -130,7 +130,7 @@ VALUES
   (178,'at@icloud.org','1-487-414-2793','F','Jul 9, 1939','2023-03-14 19:53:50'),
   (2,'molestie.sed.id@google.ca','289-7457','F','Dec 13, 1955','2023-06-18 14:28:25'),
   (78,'in@protonmail.edu','651-2237','F','Aug 24, 1943','2022-10-27 21:35:21');
-INSERT INTO profiles (user_id,email,phone,text,birthdate,created at)
+INSERT INTO profiles (user_id,email,phone,gender,birthdate,created_at)
 VALUES
   (78,'dui@outlook.com','637-0368','M','Nov 7, 2011','2023-03-07 00:06:26'),
   (164,'orci.consectetuer.euismod@yahoo.org','465-7213','M','Jul 9, 1987','2022-09-29 09:30:21'),
@@ -142,7 +142,7 @@ VALUES
   (134,'enim.sit.amet@google.com','688-3179','F','Aug 18, 1937','2022-07-07 08:55:58'),
   (116,'lacus.quisque.imperdiet@yahoo.net','1-188-384-8067','F','Jul 6, 1998','2021-12-24 23:58:28'),
   (128,'ut@outlook.couk','1-223-734-2553','M','Jul 12, 1924','2023-03-02 15:37:34');
-INSERT INTO profiles (user_id,email,phone,text,birthdate,created at)
+INSERT INTO profiles (user_id,email,phone,gender,birthdate,created_at)
 VALUES
   (56,'sed@protonmail.couk','1-724-898-5694','F','Dec 8, 2021','2023-06-05 16:11:30'),
   (57,'a.auctor@protonmail.net','1-911-714-5576','F','Feb 23, 1999','2021-09-04 21:34:11'),
@@ -154,7 +154,7 @@ VALUES
   (123,'magna.a@outlook.com','1-553-552-3853','F','Dec 9, 1956','2022-09-22 23:31:40'),
   (46,'eget.tincidunt@icloud.org','1-536-821-2728','F','Apr 6, 1958','2022-03-01 12:33:11'),
   (161,'nec.euismod.in@protonmail.org','316-8833','M','Jun 29, 1934','2022-11-09 04:58:55');
-INSERT INTO profiles (user_id,email,phone,text,birthdate,created at)
+INSERT INTO profiles (user_id,email,phone,gender,birthdate,created_at)
 VALUES
   (111,'at.fringilla.purus@google.ca','857-6578','F','Sep 2, 1956','2023-02-20 19:25:00'),
   (95,'faucibus.orci.luctus@icloud.org','1-363-412-4516','M','Oct 2, 2015','2023-07-19 08:35:59'),
@@ -166,7 +166,7 @@ VALUES
   (58,'vitae.erat.vel@protonmail.org','346-6447','M','Nov 13, 1960','2022-03-14 06:42:10'),
   (56,'enim@google.net','681-4718','M','Jul 22, 1946','2023-06-26 16:47:25'),
   (179,'ipsum.sodales.purus@protonmail.com','1-455-116-4549','M','Aug 4, 1998','2022-10-03 12:02:11');
-INSERT INTO profiles (user_id,email,phone,text,birthdate,created at)
+INSERT INTO profiles (user_id,email,phone,gender,birthdate,created_at)
 VALUES
   (178,'sociis@hotmail.com','299-6544','F','Nov 25, 2003','2023-08-17 06:19:32'),
   (34,'nisl@protonmail.net','329-3211','M','Sep 24, 1994','2023-08-20 19:31:25'),
@@ -178,7 +178,7 @@ VALUES
   (165,'quisque@yahoo.net','1-605-356-4507','F','Jun 21, 1950','2021-10-31 18:31:43'),
   (29,'dignissim.maecenas@aol.edu','1-631-833-6490','M','Jun 12, 1957','2022-06-26 09:45:48'),
   (17,'facilisis.magna@protonmail.couk','922-0543','M','Oct 31, 2011','2022-09-23 08:49:49');
-INSERT INTO profiles (user_id,email,phone,text,birthdate,created at)
+INSERT INTO profiles (user_id,email,phone,gender,birthdate,created_at)
 VALUES
   (73,'vulputate@protonmail.edu','1-233-785-1477','F','Oct 29, 1967','2022-05-10 20:39:56'),
   (66,'consequat.lectus@outlook.couk','561-0913','F','Dec 13, 1999','2022-10-08 14:17:18'),
@@ -190,7 +190,7 @@ VALUES
   (179,'duis.at@outlook.org','1-872-145-1185','M','Nov 15, 1937','2021-11-21 02:55:50'),
   (118,'non.quam@outlook.edu','219-7273','M','Aug 6, 1951','2022-03-31 17:28:14'),
   (124,'eget.ipsum@hotmail.net','1-864-729-1256','M','Oct 16, 2011','2023-01-27 12:39:56');
-INSERT INTO profiles (user_id,email,phone,text,birthdate,created at)
+INSERT INTO profiles (user_id,email,phone,gender,birthdate,created_at)
 VALUES
   (21,'consequat.nec@outlook.ca','777-2223','M','Jul 3, 1987','2021-09-30 09:57:54'),
   (120,'sodales@google.couk','1-624-232-8613','M','Jan 4, 1932','2022-04-26 09:25:53'),
@@ -202,7 +202,7 @@ VALUES
   (118,'ullamcorper.eu.euismod@google.ca','1-714-252-8541','M','Jun 5, 2002','2022-11-11 01:20:54'),
   (108,'nulla.semper@protonmail.org','305-8986','F','Jul 10, 1931','2022-06-10 18:19:55'),
   (161,'quam.quis@hotmail.net','317-3586','F','Aug 26, 1976','2022-10-05 13:27:34');
-INSERT INTO profiles (user_id,email,phone,text,birthdate,created at)
+INSERT INTO profiles (user_id,email,phone,gender,birthdate,created_at)
 VALUES
   (125,'proin.velit.sed@outlook.net','849-2605','F','Jan 12, 1981','2023-06-14 14:13:19'),
   (127,'neque.et@aol.net','1-531-226-4546','F','Oct 25, 2002','2021-11-11 21:20:35'),
