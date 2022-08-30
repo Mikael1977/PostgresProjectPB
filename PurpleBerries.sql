@@ -185,3 +185,23 @@ ALTER TABLE products_prices_reduces
   FOREIGN KEY (products_price_id) 
   REFERENCES products_prices (id)
   ON DELETE RESTRICT; 
+  
+ /*Триггер и функция на users*/
+ 
+CREATE OR REPLACE FUNCTION add_create_at_data() 
+RETURNS TRIGGER AS 
+$$
+BEGIN
+      IF (NEW.created_at IS NULL) THEN
+	  NEW.created_at := now();
+	  END IF;
+  RETURN NEW;
+END
+$$ 
+LANGUAGE PLPGSQL;
+
+DROP TRIGGER add_create_at_data_on_insert ON users;
+
+CREATE TRIGGER add_create_at_data_on_insert BEFORE INSERT ON users 
+  FOR EACH ROW 
+  EXECUTE FUNCTION add_create_at_data();
