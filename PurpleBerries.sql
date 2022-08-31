@@ -187,6 +187,17 @@ ALTER TABLE products_prices_reduces
   REFERENCES products_prices (id)
   ON DELETE RESTRICT; 
   
+ /*Добавление индексов*/
+
+CREATE UNIQUE INDEX users_id_uq ON users (id);
+CREATE UNIQUE INDEX profiles_id_uq ON profiles (id);
+CREATE INDEX profiles_user_id_idx ON profiles (user_id);
+CREATE INDEX profiles_email_idx ON profiles (email);
+CREATE INDEX baskets_user_id_idx ON baskets_users (user_id);
+CREATE UNIQUE INDEX baskets_id_uq ON baskets (id);
+CREATE INDEX baskets_basket_id_idx ON baskets_users (basket_id);
+ 
+ 
  /*Триггер и функция на users*/
  
 CREATE OR REPLACE FUNCTION add_create_at_data() 
@@ -231,6 +242,34 @@ address,
 FROM pickpoints
 ORDER BY products_count DESC NULLS LAST;
 
+
+/*Запрос выводит список пользователей корзин с email*/
+
+SELECT 
+baskets.id AS basket_id,
+baskets_users.user_id,
+profiles.email,
+CONCAT (users.first_name, ' ', users.last_name)
+FROM baskets
+JOIN baskets_users ON baskets.id = baskets_users.basket_id
+JOIN users ON users.id = baskets_users.user_id
+JOIN profiles ON profiles.user_id = baskets_users.user_id
+;
+
+/*Вывод общей стоимости корзины с учетом НЕ индивидуальных скидок. 
+В запросе идет обращение к представлению  baskets_products.product_count. 
+Необходимо убедиться в его наличии*/
+
+SELECT 
+baskets.id,
+SUM(prices_with_discounts.reduced_price * baskets_products.product_count) AS total_basket_cost
+FROM baskets
+JOIN baskets_products ON baskets_products.basket_id = baskets.id
+JOIN prices_with_discounts ON prices_with_discounts.product_id = baskets_products.product_id
+GROUP BY baskets.id
+order by baskets.id;
+
+
 /*Представления*/
 
 /*Представление в том числе выводит информацию о сенах на товар с учетом скидки*/
@@ -251,6 +290,24 @@ FROM products_prices
 LEFT JOIN products_prices_reduces ON products_prices.id = products_prices_reduces.products_price_id;
 
 SELECT * FROM prices_with_discounts;
+
+
+/*Представленгие для вывода общей стоимости корзины с учетом НЕ индивидуальных скидок. 
+В запросе идет обращение к представлению  baskets_products.product_count. 
+Необходимо убедиться в его наличии*/
+
+DROP VIEW IF EXISTS baskets_costs_view; 
+
+CREATE VIEW baskets_costs_view AS
+SELECT 
+baskets.id,
+SUM(prices_with_discounts.reduced_price * baskets_products.product_count) AS total_basket_cost
+FROM baskets
+JOIN baskets_products ON baskets_products.basket_id = baskets.id
+JOIN prices_with_discounts ON prices_with_discounts.product_id = baskets_products.product_id
+GROUP BY baskets.id
+order by baskets.id;
+
 
 /*Функция выводит стоимость товара с учетом индивидуальной скидки. Проверка на существование данных не осуществляется, 
 также заранее должно быть создано представление prices_with_discounts*/
